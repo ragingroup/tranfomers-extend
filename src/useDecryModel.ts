@@ -130,7 +130,7 @@ const useDecryptModel = (encryptedDir: string,
 
         const pipelineSync = await usePipeline()
         const taskHandler = pipelineSync(task, modelName, pretrainedModelOptions);
-        return taskHandler as AllTasks[T];
+        return taskHandler as AllTasks[typeof task];
 
     }
     return {
