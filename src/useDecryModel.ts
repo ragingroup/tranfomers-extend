@@ -1,6 +1,6 @@
 // 文件名: decry.ts
 
-import { pipeline, Pipeline, PipelineType,env ,PretrainedModelOptions} from "ragin-tsfm";
+import { pipeline, Pipeline, PipelineType,env ,PretrainedModelOptions,AllTasks} from "ragin-tsfm";
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -130,7 +130,7 @@ const useDecryptModel = (encryptedDir: string,
 
         const pipelineSync = await usePipeline()
         const taskHandler = pipelineSync(task, modelName, pretrainedModelOptions);
-        return taskHandler
+        return taskHandler as AllTasks[T];
 
     }
     return {
@@ -171,7 +171,7 @@ const testDemo = async () => {
         console.error('运行失败:', error);
     }
 }
-testDemo()
+
 
 export {
     type EncryptOptions,
