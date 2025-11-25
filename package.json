@@ -1,0 +1,35 @@
+{
+  "name": "tranfomers-extend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+
+  "type": "module",
+ 
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "transformers",
+    "transformers.js"
+  ],
+  "dependencies": {
+  
+    "fast-glob": "^3.3.3",
+    "fs-extra": "^11.3.2",
+    "memfs": "^4.51.0",
+    "ragin-tsfm": "git+https://github.com/ragingroup/transformers.js.git"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.10.1",
+    "typescript": "^5.8.2"
+  },
+  "files": [
+    "src",
+    "dist",
+    "types",
+    "README.md",
+    "LICENSE"
+  ]
+}

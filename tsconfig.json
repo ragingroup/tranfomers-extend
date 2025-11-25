@@ -1,0 +1,22 @@
+{
+ 
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "allowImportingTsExtensions":false,
+    "checkJs": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "outDir": "dist",
+    "strict": false,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": false,
+    "emitDeclarationOnly": false,
+    "esModuleInterop": true,
+    "noCheck": true
+  },
+
+ 
+}
