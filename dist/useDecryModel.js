@@ -108,5 +108,4 @@ const testDemo = async () => {
         console.error('运行失败:', error);
     }
 };
-testDemo();
 export { useExtenEnv, useDecryptModel, loadEncryptedModel, loadEncryptedFile, memFs, vol, setModelFileFilter };

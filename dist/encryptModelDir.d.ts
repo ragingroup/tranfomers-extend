@@ -11,4 +11,3 @@ type EncryptOptions = {
  */
 declare const encryptModelDir: (plainModelDir: string, encryptedDir: string, encryptOptions: EncryptOptions) => Promise<void>;
 export { encryptModelDir, getDirFiles, type EncryptOptions };
-//# sourceMappingURL=encryptModelDir.d.ts.map

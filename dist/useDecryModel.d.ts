@@ -30,8 +30,7 @@ type PathHandler = (params: {
 };
 declare const loadEncryptedModel: (encryptedDir: string, modelName: string, key: Buffer, pathHandler?: PathHandler) => Promise<(<T extends PipelineType>(task: T, model: string, pretrainedModelOptions?: PretrainedModelOptions) => any)>;
 declare const useDecryptModel: (encryptedDir: string, modelName: string, encryptOptions: EncryptOptions, pathHandler?: PathHandler) => {
-    useTask: <T extends PipelineType>(task: T, pretrainedModelOptions?: PretrainedModelOptions) => Promise<any>;
+    useTask: <T extends PipelineType>(task: T, pretrainedModelOptions?: PretrainedModelOptions) => Promise<AllTasks>;
     usePipeline: () => Promise<(<T extends PipelineType>(task: T, model: string, pretrainedModelOptions?: PretrainedModelOptions) => any)>;
 };
 export { type EncryptOptions, useExtenEnv, useDecryptModel, loadEncryptedModel, loadEncryptedFile, memFs, vol, setModelFileFilter };
-//# sourceMappingURL=useDecryModel.d.ts.map

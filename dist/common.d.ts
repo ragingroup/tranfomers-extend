@@ -4,4 +4,3 @@ declare const jsonToArrayBuffer: (jsonData: Record<string, any> | string) => Arr
 declare const arrayBufferToJson: (arrayBuffer: ArrayBuffer) => any;
 declare const getPromiseState: (promise: Promise<any>) => Promise<unknown>;
 export { getPromiseState, arrayBufferToJson, jsonToArrayBuffer, getDirFiles, isMain };
-//# sourceMappingURL=common.d.ts.map
